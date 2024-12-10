@@ -256,6 +256,7 @@ exclude:
   - _pages/projects.md
   - _pages/dropdown.md 
   - _posts
+  - projects 
 keep_files:
   - CNAME
   - .nojekyll
