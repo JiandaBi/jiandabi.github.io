@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Zhejiang Wanli University. 
+subtitle: <a href='https://en.zwu.edu.cn'>Affiliations</a>. Zhejiang Wanli University. 
 
 profile:
   align: right
