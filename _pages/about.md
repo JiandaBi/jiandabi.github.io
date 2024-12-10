@@ -10,8 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p> 18905748935</p>
-    <p>123 your address street</p>
-    <p>Ningbo, Zhejiang 315000</p>
+    <p>No. 8 South Qianhu Road</p>
+    <p>Ningbo, China 315100</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
