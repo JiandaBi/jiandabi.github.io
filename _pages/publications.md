@@ -9,8 +9,6 @@ nav_order: 1
 
 <!-- _pages/publications.md -->
 
-  
- 
  
 ## Working Papers
 
