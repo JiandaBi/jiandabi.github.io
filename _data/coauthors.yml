@@ -1,39 +1,58 @@
-"adams":
+"Adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
-    
-"podolsky":
+
+"Podolsky":
   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
     url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-"rosen":
+"Rosen":
   - firstname: ["Nathan", "N."]
     url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-"bach":
+"Bach": 
   - firstname: ["Johann Sebastian", "J. S."]
     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-"przibram":
+"Przibram":
   - firstname: ["Karl"]
     url: https://link.springer.com/article/10.1007/s00016-019-00242-z
 
-"schrodinger":
+"Schrödinger":
   - firstname: ["Erwin"]
     url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
 
-"lorentz":
+"Lorentz":
   - firstname: ["Hendrik Antoon"]
     url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
 
-"planck":
+"Planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
-
-"Hua":
-  - firstname: ["Xiuping"]
-    url: https://scholar.google.com/citations?user=Vq5g96MAAAAJ&hl=en
     
+"Casella":
+  - firstname: ["Alessandra"]
+    url: https://blogs.cuit.columbia.edu/ac186/
+    
+"Ravindran":
+  - firstname: ["Dilip"]
+    url: https://sites.google.com/view/dilip-ravindran/home
+    
+"Meyer":
+  - firstname: ["Bruce", "Bruce D."]
+    url: https://voices.uchicago.edu/brucemeyer/
+    
+"Huang":
+  - firstname: ["Jingong"]
+    url: https://sites.google.com/view/jingonghuang/
+    
+"Caron":
+  - firstname: ["Laura", "Robin"]
+    url: https://laurakcaron.github.io/
+    
+"De Lara":
+  - firstname: ["Lucas"]
+    url: https://lucasdelara.com
