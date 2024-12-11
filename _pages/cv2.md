@@ -4,7 +4,7 @@ permalink: /cv2/
 title: CV
 description: 
 nav: true
-nav_order: 3_
+nav_order: 5_
 ---
 
 Please click <a href = "../assets/pdf/cv.pdf">here</a> for my CV.
