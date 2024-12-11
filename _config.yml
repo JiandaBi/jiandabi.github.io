@@ -229,39 +229,16 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ['_pages']
 exclude:
-  - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
-  - Dockerfile
-  - docker-compose.yml
-  - docker-compose-slim.yml
-  - FAQ.md
+  - bin
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
-  - LICENSE
-  - lighthouse_results/
-  - package.json
-  - package-lock.json
-  - _pages/about_einstein.md
-  - purgecss.config.js
-  - README.md
-  - readme_preview/
   - vendor
-  - _pages/profiles.md
-  - _pages/blog.md
-  - _pages/repositories.md
-  - _pages/projects.md
-  - _pages/dropdown.md 
-  - _posts/
-  - projects/
-  - blog/
-  - projects
 keep_files:
   - CNAME
   - .nojekyll
+  - .git
 
 # Plug-ins
 plugins:
