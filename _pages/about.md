@@ -30,7 +30,7 @@ My research interests include the Economics of Innovation of Productivity, Techn
 <br> 
 <br> 
  
-My CV is <a href = "./assets/pdf/cv.pdf">here</a>. 
+My CV is <a href = "https://jiandabi.github.io/assets/pdf/cv.pdf">here</a>. 
 
 To contact me, please email bijianda@gmail.edu
 
