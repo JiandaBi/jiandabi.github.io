@@ -22,15 +22,19 @@ social: true # includes social icons at the bottom of the page
 
   
 
-Welcome! I am an assistant professor at <a href='https://en.zwu.edu.cn'>Zhejiang Wanli University</a>. <br> 
+Welcome! 
+<br> 
+ 
+I am currently an assistant professor at <a href='https://en.zwu.edu.cn'>Zhejiang Wanli University</a>. 
+<br> 
 
 
-My research interests include the Economics of Innovation of Productivity, Technology Networks, Systematic Risk, and Green Finance. <br> 
+My research interests include the Economics of Innovation of Productivity, Technology Networks, Systematic Risk, and Green Finance.
+<br> 
 
 
 
 My CV is <a href = "./assets/pdf/cv.pdf">here</a>. 
-
 
 To contact me, please email bijianda@gmail.edu
 
