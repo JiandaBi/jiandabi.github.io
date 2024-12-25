@@ -324,8 +324,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Bi, 毕]
-  first_name: [Jianda, 坚达]
+  last_name: [Bi]
+  first_name: [Jianda]
 
   style: apa
   locale: en
