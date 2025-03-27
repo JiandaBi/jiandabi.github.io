@@ -25,7 +25,7 @@ social: true # includes social icons at the bottom of the page
 Welcome! 
 <br> 
  
-I am currently an assistant professor at <a href='https://en.zwu.edu.cn'>Zhejiang Wanli University</a>. 
+I am currently a lecturer at <a href='https://en.zwu.edu.cn'>Zhejiang Wanli University</a>. 
 My research interests include the Economics of Innovation of Productivity, Technology Networks, Systematic Risk, and Green Finance.
 <br> 
 <br> 
