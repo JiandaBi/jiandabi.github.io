@@ -32,6 +32,6 @@ My research interests include innovations, technology networks, and systematic r
  
 My CV is <a href = "https://jiandabi.github.io/assets/pdf/cv.pdf">here</a>. 
 
-To contact me, please email bijianda@gmail.edu
+To contact me, please email bijianda@gmail.com
 
  
