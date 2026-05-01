@@ -1,0 +1,101 @@
+---
+---
+<!-- Clean text-only bibliography template -->
+
+<div class="bib-clean-entry" style="margin-bottom: 1.2rem;">
+
+  <!-- Number will be handled by CSS counter -->
+
+  <!-- Title -->
+  <div class="bib-clean-title" style="font-weight: 600; margin-bottom: 0.15rem;">
+    {% if entry.doi %}
+      <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">{{ entry.title }}</a>
+    {% elsif entry.pdf %}
+      {% if entry.pdf contains '://' %}
+        <a href="{{ entry.pdf }}" target="_blank" rel="noopener">{{ entry.title }}</a>
+      {% else %}
+        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank" rel="noopener">{{ entry.title }}</a>
+      {% endif %}
+    {% else %}
+      {{ entry.title }}
+    {% endif %}
+  </div>
+
+  <!-- Authors -->
+  <div class="bib-clean-authors" style="font-size: 0.92rem; color: #555;">
+    {% assign author_array_size = entry.author_array | size %}
+    {% for author in entry.author_array %}
+      {%- assign author_last_clean = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+      {%- assign author_first_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+      {% assign author_is_self = false %}
+      {% if site.scholar.last_name contains author_last_clean %}
+        {% if site.scholar.first_name contains author.first %}
+          {% assign author_is_self = true %}
+        {% endif %}
+      {% endif %}
+      {%- if author_is_self == false -%}
+        {%- assign cn_test = author_last_clean | replace: '毕坚达', '___SELF___' -%}
+        {%- if cn_test contains '___SELF___' -%}
+          {% assign author_is_self = true %}
+        {%- endif -%}
+      {%- endif -%}
+      {%- capture author_display -%}
+        {%- if author.first != blank -%}
+          {{ author.first }} {{ author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' }}
+        {%- else -%}
+          {{ author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' }}
+        {%- endif -%}
+      {%- endcapture -%}
+      {%- if author_is_self -%}
+        <strong>{{ author_display | strip }}</strong>
+      {%- else -%}
+        {{ author_display | strip }}
+      {%- endif -%}
+      {%- if forloop.last == false %}, {% endif -%}
+    {% endfor %}
+  </div>
+
+  <!-- Journal / Venue info -->
+  <div class="bib-clean-venue" style="font-size: 0.9rem; color: #666;">
+    {% if entry.type == 'article' %}
+      <em>{{ entry.journal }}</em>{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}, pp. {{ entry.pages }}{% endif %}. {{ entry.year }}.
+    {% elsif entry.type == 'inproceedings' %}
+      <em>{{ entry.booktitle }}</em>{% if entry.location %}, {{ entry.location }}{% endif %}. {{ entry.year }}.
+    {% elsif entry.type == 'incollection' %}
+      In <em>{{ entry.booktitle }}</em>{% if entry.pages %}, pp. {{ entry.pages }}{% endif %}. {{ entry.year }}.
+    {% else %}
+      {% if entry.journal %}<em>{{ entry.journal }}</em>{% endif %}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}, pp. {{ entry.pages }}{% endif %}. {{ entry.year }}.
+    {% endif %}
+    {% if entry.note %}
+      <span style="color: #888;">({{ entry.note }})</span>
+    {% endif %}
+  </div>
+
+  <!-- Links row -->
+  <div class="bib-clean-links" style="font-size: 0.82rem; margin-top: 0.15rem;">
+    {% if entry.doi %}
+      <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener" style="margin-right: 0.8rem;">[DOI]</a>
+    {% endif %}
+    {% if entry.pdf %}
+      {% if entry.pdf contains '://' %}
+        <a href="{{ entry.pdf }}" target="_blank" rel="noopener" style="margin-right: 0.8rem;">[PDF]</a>
+      {% else %}
+        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank" rel="noopener" style="margin-right: 0.8rem;">[PDF]</a>
+      {% endif %}
+    {% endif %}
+    {% if entry.ssrn %}
+      <a href="{{ entry.ssrn }}" target="_blank" rel="noopener" style="margin-right: 0.8rem;">[SSRN]</a>
+    {% endif %}
+    {% if entry.abstract %}
+      <a class="bib-clean-abstract-toggle" role="button" style="cursor: pointer; margin-right: 0.8rem; color: #007bff;">[Abstract]</a>
+    {% endif %}
+  </div>
+
+  {% if entry.abstract %}
+  <!-- Hidden abstract -->
+  <div class="bib-clean-abstract" style="display: none; font-size: 0.88rem; color: #444; margin-top: 0.3rem; padding: 0.5rem 0.8rem; border-left: 3px solid #ddd; background: #fafafa;">
+    {{ entry.abstract }}
+  </div>
+  {% endif %}
+
+</div>

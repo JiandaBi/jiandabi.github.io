@@ -3,8 +3,7 @@ layout: page
 permalink: /research/
 title: Research
 description:  
-nav: true
-nav_order: 2
+nav: false
 ---
 
 <!-- _pages/publications.md -->
