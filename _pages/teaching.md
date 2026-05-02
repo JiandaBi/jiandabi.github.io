@@ -1,13 +1,18 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false
-nav_order: 6
+title: Teaching
+nav: true
+nav_order: 4
+description: 
 ---
 
- 
- Financial Technology (BUSI4606), Teaching Assistant, spring 2022,2023,2024 <br>
- Macroeconomics Theory (EOCN2029), Teaching Assistant, spring  2024
- 
+### Undergraduate
+
+- **西方经济学**
+- **人工智能概论**
+- **Python 语言及金融应用**
+
+### Graduate
+
+- **人工智能与机器学习**

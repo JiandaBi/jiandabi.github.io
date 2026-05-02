@@ -3,7 +3,7 @@ layout: page
 permalink: /researches/
 title: Research
 nav: true
-nav_order: 2
+nav_order: 3
 description: >
   Publications and working papers.
 ---
@@ -35,7 +35,7 @@ description: >
   font-weight: 500;
 }
 
-/* Year group headings - make smaller */
+/* Year group headings */
 .bib-section h2.bibliography {
   font-size: 1.05rem;
   font-weight: 600;
@@ -43,6 +43,11 @@ description: >
   margin: 1rem 0 0.5rem 0;
   border-bottom: 1px solid #eee;
   padding-bottom: 0.25rem;
+}
+
+/* Working Papers: hide year headings */
+.bib-no-year h2.bibliography {
+  display: none;
 }
 
 /* Entry internal spacing */
@@ -101,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </div>
 
-<div class="bib-section" markdown="1">
+<div class="bib-section bib-no-year" markdown="1">
 
 ## Working Papers / 工作论文
 
