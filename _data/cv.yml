@@ -26,3 +26,11 @@
   contents:
     - name: Programming
       value: Python, Stata, Matlab, LaTeX, R, SQL
+
+- title: Languages
+  type: map
+  contents:
+    - name: Mandarin
+      value: Native speaker
+    - name: English
+      value: Fluent
