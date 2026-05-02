@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p><a href="https://jiandabi.github.io/assets/pdf/cv.pdf">My CV is here</a></p>
 
 news: false
 selected_papers: false
