@@ -9,10 +9,11 @@ description:
 
 ### Undergraduate
 
-- **西方经济学**
-- **人工智能概论**
-- **Python 语言及金融应用**
+- **Macroeconomics（宏观经济学）**
+- **Microeconomics（微观经济学）**
+- **Introduction to Artificial Intelligence（人工智能概论）**
+- **Python Programming and Financial Applications（Python 语言及金融应用）**
 
 ### Graduate
 
-- **人工智能与机器学习**
+- **Artificial Intelligence and Machine Learning（人工智能与机器学习）**
